@@ -123,8 +123,8 @@ iframe {
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
   padding-bottom: 0.5%;
   padding-top: 0.5%;
   border-bottom: 3px solid black;
@@ -135,6 +135,7 @@ iframe {
   background-color: blanchedalmond;
   border-radius: 10px;
   font-weight: bold;
+  margin-left: 1%;
 }
 
 #accountBtn:hover{
