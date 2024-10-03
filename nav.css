@@ -1,0 +1,47 @@
+/*Main Navigation css*/
+nav {
+  width: 97.5%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: burlywood;
+  max-height: 10%;
+  min-height: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-bottom: 10px solid blanchedalmond;
+  border-right: 10px solid blanchedalmond;
+  border-left: 10px solid blanchedalmond;
+  border-top: 10px solid blanchedalmond;
+  margin-left: .5%;
+  margin-right: .5%;
+  border-radius: 20px;
+}
+
+nav a{
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  color: black;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+nav a:hover{
+  background-color: black !important;
+  color: blanchedalmond;
+}
+
+nav a:focus{
+  background-color: white !important;
+  color: black;
+}
