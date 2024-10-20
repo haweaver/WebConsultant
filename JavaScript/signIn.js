@@ -9,11 +9,10 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
 });
 
 submitFunctions = async function(){
-  await(navigateToHome())
-  .then(updateSignInIndicator());
+  await(validateCredentials());
 }
 
-function navigateToHome() {
+function validateCredentials() {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
 
@@ -24,17 +23,6 @@ function navigateToHome() {
     alert("Invalid username or password");
   }
 }
-
 function navigateToSignIn() {
   window.location.href = "signIn.html";
-}
-
-function updateSignInIndicator() {
-  let signInTxtElement = document.getElementById("signInTxt");
-
-    if (window.signedIn) {
-      signInTxtElement.innerHTML = "Signed In";
-    } else {
-      signInTxtElement.innerHTML = "Signed Out";
-    }
 }
