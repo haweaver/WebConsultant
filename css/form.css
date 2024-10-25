@@ -40,3 +40,42 @@
   background-color: burlywood; /* Change this color to match your specified color */
 }
 /*End Sign In Form*/
+
+/*Begin Sign In Form*/
+#ContactForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: blanchedalmond; /* Change this color to match your specified color */
+  border-radius: 5px;
+}
+#ContactForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black; /* Change this color to match your specified color */
+}
+#ContactForm input[type="text"],
+#ContactForm input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  border: 1px solid black; /* Change this color to match your specified color */
+  border-radius: 3px;
+}
+#ContactForm button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: black; /* Change this color to match your specified color */
+  color: white; /* Change this color to match your specified color */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#ContactForm button[type="submit"]:hover {
+  background-color: burlywood; /* Change this color to match your specified color */
+}
+/*End Sign In Form*/
