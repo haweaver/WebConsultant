@@ -5,6 +5,8 @@ fetch('header_nav.html')
 .then(data => {
   const headerElement = document.getElementById('header');
   headerElement.innerHTML = data;
+
+  updateAccountButtonText();
 });
 
 fetch('footer.html')

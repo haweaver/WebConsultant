@@ -38,3 +38,12 @@ function navigateToSignInOut() {
     window.location.href = "signIn.html";
   }
 }
+
+function updateAccountButtonText() {
+  const accountBtn = document.getElementById('accountBtn');
+  if (window.signedIn) {
+    accountBtn.innerText = "Sign Out";
+  } else {
+    accountBtn.innerText = "Sign In";
+  }
+}
