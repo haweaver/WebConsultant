@@ -6,6 +6,7 @@ fetch('header_nav.html')
   const headerElement = document.getElementById('header');
   headerElement.innerHTML = data;
 
+  //Updates account button text depending on sign in status
   updateAccountButtonText();
 });
 
