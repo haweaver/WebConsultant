@@ -1,7 +1,10 @@
-// JavaScript code for the sign-in form
-
 window.signedIn = false;
 
+window.onload = function() {
+  if (localStorage.getItem('signedIn') === 'true') {
+    window.signedIn = true;
+  }
+};
 
 document.getElementById("signInForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the form from submitting normally
@@ -17,12 +20,20 @@ function validateCredentials() {
   let password = document.getElementById("password").value;
 
   if (username === "WEB Consultant" && password === "password1") {
-    window.location.href = "home.html"; // Redirect to home.html after successful sign-in
+    alert("Welcome " + username + "!");
     window.signedIn = true;
+    localStorage.setItem('signedIn', true);
   } else {
     alert("Invalid username or password");
   }
 }
-function navigateToSignIn() {
-  window.location.href = "signIn.html";
+
+function navigateToSignInOut() {
+  if (window.signedIn) {
+    window.location.href = "signOut.html";
+    localStorage.setItem('signedIn', false);
+    window.signedIn = false; // Reset the signedIn variable
+  } else {
+    window.location.href = "signIn.html";
+  }
 }
