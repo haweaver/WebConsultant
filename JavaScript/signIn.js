@@ -23,6 +23,7 @@ function validateCredentials() {
     alert("Welcome " + username + "!");
     window.signedIn = true;
     localStorage.setItem('signedIn', true);
+    window.location.href = "home.html"; // Redirect to home.html after successful sign-in
   } else {
     alert("Invalid username or password");
   }
